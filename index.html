@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spandana G - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5dc; /* Beige background */
+            color: #4e4b3a; /* Darker text color for contrast */
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background-color: #b38b5d; /* Goldish shade for header */
+            padding: 20px;
+            color: #071b20;
+        }
+        .profile-pic {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 20px auto;
+            border: 5px solid #b38b5d;
+            display: block;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #b38b5d;
+            color: #071b20;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        #intro {
+            padding: 50px;
+            background-color: #f0e5c9; /* Light beige background for intro */
+            color: #4e4b3a;
+        }
+        .content-box {
+            background-color: #e0cda9; /* Light goldish background for content boxes */
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 600px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .content-box:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow on hover */
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 10px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #4e4b3a; /* Changed link color to black */
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            color: #b38b5d; /* Optional: Change link color on hover */
+        }
+        footer {
+            background-color: #b38b5d;
+            color: #071b20;
+            padding: 20px;
+        }
+        footer a {
+            color: #071b20;
+            text-decoration: none;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .profile-pic {
+                width: 150px;
+                height: 150px;
+            }
+            .content-box {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Spandana G</h1>
+        <p>AI & Data Science Enthusiast | Python Developer</p>
+        <a href="#contact" class="btn">Contact Me</a>
+    </header>
+    
+    <img src="propic.jpg" alt="Spandana G" class="profile-pic"> <!-- Update 'image.png' with your actual file path -->
+    
+    <section id="intro">
+        <h2>Welcome!</h2>
+        <p>I am a passionate AI and Data Science student with practical experience in machine learning, natural 
+            language processing (NLP), and data visualization. With a strong foundation in Python, web technologies, and 
+            modern AI tools, I enjoy building intelligent solutions that solve real-world problems. I am highly motivated to 
+            innovate, analyze complex data, and create models that drive meaningful insights. Eager to contribute to cutting
+            edge projects, I continuously strive to learn, adapt, and make a lasting impact through technology and data-driven 
+            strategies </p>
+    </section>
+    
+    <div class="content-box">
+        <h2><a href="skills.html">Skills</a></h2>
+        <p>Explore the technologies and tools I have mastered.</p>
+    </div>
+    
+    <div class="content-box">
+        <h2><a href="experience.html">Experience</a></h2>
+        <p>Check out my work experience, internships, and projects.</p>
+    </div>
+    
+    <div class="content-box">
+        <h2><a href="projects.html">Projects</a></h2>
+        <p>Discover the projects I have worked on, including web development and data science.</p>
+    </div>
+
+    <div class="content-box">
+        <h2><a href="certifications.html">Certifications</a></h2>
+        <p>Explore the certifications I have earned in various fields.</p>
+    </div>
+
+    <div class="content-box">
+        <h2><a href="education.html">Education</a></h2> <!-- Renamed to "Education" -->
+        <p>Learn about my educational background and academic achievements.</p>
+    </div>
+    
+    <div class="content-box" id="resume-section">
+        <h2>Get My Resume</h2>
+        <p>Enter your email to download my resume:</p>
+        <form method="POST" action="/submit">
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <button type="submit" class="btn">Download Resume</button>
+        </form>
+    </div>
+
+
+    <footer id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: gspandana1203@gmail.com</p>
+        <p>Phone: 9481351815</p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/spandana-g-6982a326b" target="_blank">Spandana G</a></p>
+    </footer>
+</body>
+</html>
+
